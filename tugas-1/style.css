@@ -1,0 +1,234 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: #f4f7ff;
+    color: #333;
+}
+
+/* CONTAINER */
+.container {
+    width: min(1100px, 92%);
+    margin: auto;
+}
+
+/* NAVBAR */
+.navbar {
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 15px 0;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.15);
+}
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2b52ff;
+    letter-spacing: 1px;
+}
+.nav-menu {
+    display: flex;
+    gap: 22px;
+}
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 550;
+    transition: 0.25s;
+}
+.nav-menu a:hover {
+    color: #2b52ff;
+    text-shadow: 0 0 10px rgba(43,82,255,0.4);
+}
+.nav-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #2b52ff;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+}
+.hero-box {
+    position: relative;
+    color: white;
+    text-align: center;
+    backdrop-filter: blur(6px);
+    padding: 35px 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+.hero-box h1 {
+    font-size: 46px;
+    margin-bottom: 12px;
+}
+.hero-box p {
+    font-size: 19px;
+    margin-bottom: 22px;
+}
+.btn-primary {
+    background: #2b52ff;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+}
+.btn-primary:hover {
+    background: #1c39cc;
+}
+
+/* SECTIONS */
+.section {
+    padding: 70px 0;
+}
+.title {
+    text-align: center;
+    font-size: 30px;
+    color: #2b52ff;
+    margin-bottom: 35px;
+}
+
+/* GRID */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+}
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 22px;
+}
+
+/* CARDS */
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-8px);
+}
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+.card h3 {
+    padding: 15px;
+    color: #2b52ff;
+}
+.card p {
+    padding: 0 15px 20px;
+}
+
+/* PAKET TIKET */
+.paket-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+.paket-card:hover {
+    transform: scale(1.03);
+}
+.paket-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+.paket-body {
+    padding: 20px;
+}
+.paket-body h3 {
+    color: #2b52ff;
+}
+.harga {
+    font-size: 20px;
+    color: #1e34cc;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* GALERI */
+.gallery-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.gallery-img:hover {
+    transform: scale(1.03);
+}
+
+/* VIDEO / MAP */
+.video-box {
+    display: flex;
+    justify-content: center;
+}
+.video-box iframe {
+    width: 100%;
+    max-width: 900px;
+    height: 450px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+/* FOOTER */
+.footer {
+    background: #2b52ff;
+    color: white;
+    text-align: center;
+    padding: 18px 0;
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 780px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background: white;
+        padding: 25px;
+        position: absolute;
+        right: 20px;
+        top: 75px;
+        border-radius: 10px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+    .nav-btn {
+        display: block;
+    }
+}
