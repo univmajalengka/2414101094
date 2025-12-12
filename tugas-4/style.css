@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #2b6cb0;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+form {
+    width: 400px;
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+}
+
+button {
+    padding: 10px;
+    width: 100%;
+    background: #2b6cb0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+table {
+    width: 95%;
+    margin: 20px auto;
+    background: white;
+    border-collapse: collapse;
+}
+
+th {
+    background: #2b6cb0;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.paket-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.paket-card {
+    width: 250px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.paket-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.btn {
+    background: #2b6cb0;
+    color: white;
+    padding: 8px 15px;
+    display: inline-block;
+    border-radius: 8px;
+    margin-top: 10px;
+    text-decoration: none;
+}
